@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimary" format="color"/>
+    <attr name="colorOnPrimary" format="color"/>
+    <attr name="colorPrimaryVariant" format="color"/>
+    <attr name="colorSecondary" format="color"/>
+    <attr name="colorSecondaryVariant" format="color"/>
+    <attr name="colorOnSecondary" format="color"/>
+    <attr name="colorSecondaryFixed" format="color"/>
+    <attr name="colorOnSecondaryFixed" format="color"/>
+    <attr name="colorSecondaryContainer" format="color"/>
+    <attr name="colorOnSecondaryContainer" format="color"/>
+    <attr name="colorOnTertiary" format="color"/>
+    <attr name="colorTertiary" format="color"/>
+
+
+</resources>

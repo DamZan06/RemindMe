@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204723023101",
+    "project_id": "remindme-51398",
+    "storage_bucket": "remindme-51398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204723023101:android:cb72a25e125548af9ee294",
+        "android_client_info": {
+          "package_name": "com.damiano.remindme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUDYwXJNMF-RZrqYcNkYNXMLCEDBeB6pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

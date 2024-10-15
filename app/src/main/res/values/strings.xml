@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">RemindMe</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_add">Add</string>
+    <string name="titel">Title:</string>
+    <string name="titel_hinzufugen">Add Title</string>
+    <string name="beschreibung_hinzufugen">Add Description</string>
+    <string name="datum">Date:</string>
+    <string name="datum_festlegen">Set Date</string>
+    <string name="zeit">Time:</string>
+    <string name="zeit_festlegen">Set Time</string>
+    <string name="ort">Location:</string>
+    <string name="ort_hinzufugen">Add Location</string>
+    <string name="personen">People:</string>
+    <string name="personen_hinzufugen">Add People</string>
+    <string name="benachrichtigung">Notification:</string>
+    <string name="_5_min">5 min</string>
+    <string name="_10_min">10 min</string>
+    <string name="_15_min">15 min</string>
+    <string name="_30_min">30 min</string>
+    <string name="_45_min">45 min</string>
+    <string name="_60_min">60 min</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="title_event">Event</string>
+    <string name="titel_lable">Title</string>
+    <string name="datum_lable">Date</string>
+    <string name="startzeit_lable">Start Time</string>
+    <string name="endzeit_lable">End Time</string>
+    <string name="ereignis_am_von_bis_gespeichert">Event %1$s on %2$s from %3$s to %4$s saved!</string>
+    <string name="bitte_f_llen_sie_das_folgende_feld_aus">Please fill out the following field: %1$s</string>
+    <string name="bitte_f_llen_sie_die_folgenden_felder_aus_und">Please fill out the following fields: %1$s and %2$s</string>
+    <string name="startet_in_minuten">%1$s starts in %2$s minutes</string>
+    <string name="von">from</string>
+    <string name="bis">to</string>
+    <string name="_1_weiteres">+1 more</string>
+    <string name="weitere">+%1$s more</string>
+    <string name="zeit_von">Time: %1$s - %2$s</string>
+    <string name="ort_">Location: %1$s</string>
+    <string name="beschreibung_">Description: %1$s</string>
+    <string name="personen_">People: %1$s</string>
+    <string name="italienisch">Italian</string>
+    <string name="deutsch">German</string>
+    <string name="english">English</string>
+    <string name="ausgew_hlte_sprache">Selected Language: %1$s</string>
+    <string name="l_schbest_tigung">Delete Confirmation</string>
+    <string name="bist_du_sicher_dass_du_dieses_ereignis_l_schen_m_chtest">Are you sure you want to delete this event?</string>
+    <string name="ja">Yes</string>
+    <string name="nein">No</string>
+    <string name="sie_haben_ein_bevorstehendes_ereignis">You have an upcoming event!</string>
+    <string name="title_settings">Settings</string>
+    <string name="sprache_ausw_hlen">Select Language</string>
+    <string name="no_user">No User</string>
+    <string name="w_chentlich">Weekly</string>
+    <string name="monday">Monday</string>
+    <string name="neues_event">New Event</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="vor_und_nachname">First and Last Name</string>
+    <string name="confirm">Confirm</string>
+    <string name="daily">Daily</string>
+    <string name="new_event">New Event</string>
+    <string name="feb_2021">Feb 2021</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thur">THUR</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="attendees">Attendees</string>
+    <string name="delete">Delete</string>
+    <string name="change">Change</string>
+    <string name="l_schen">Delete</string>
+    <string name="speichern">Save</string>
+    <string name="neues_ereignis">New Event</string>
+    <string name="user_email">User Email</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="zeit_">Time: %1$s - %2$s</string>
+    <string name="datum_">Date: %1$s.%2$s.%3$s</string>
+    <string name="account_successfully_deleted">Account successfully deleted!</string>
+    <string name="error_deleting_account">Error deleting account: %1$s</string>
+    <string name="account">Account: %1$s</string>
+    <string name="user">User: %1$s</string>
+    <string name="user_">User: %1$s</string>
+    <string name="no_name">No Name</string>
+    <string name="name">name</string>
+    <string name="user__">User: %1$s</string>
+    <string name="successfully_signed_in">Successfully signed in</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="this_is_required_field">This is required field</string>
+    <string name="check_email_format">Check email format</string>
+    <string name="password_should_at_least_6_characters_long">Password should at least 6 characters long</string>
+    <string name="neues_konto_erfolgreich_erstellt">New account successfully created</string>
+    <string name="fehler_beim_aktualisieren_des_profils">Error updating profile: %1$s</string>
+    <string name="registrierung_fehlgeschlagen">Registration failed: %1$s</string>
+    <string name="name_erforderlich">Name required</string>
+    <string name="e_mail_feld_erforderlich">Email field required</string>
+    <string name="ung_ltiges_e_mail_format">Invalid email format</string>
+    <string name="passwortfeld_erforderlich">Password field required</string>
+    <string name="das_passwort_muss_mindestens_6_zeichen_lang_sein">Password must be at least 6 characters long</string>
+    <string name="best_tigungsfeld_f_r_das_passwort_erforderlich">Confirmation field for the password required</string>
+    <string name="die_passw_rter_stimmen_nicht_berein">Passwords do not match</string>
+    <string name="confirm_language_change">Confirm Language Change</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_will_close">The app will close to apply the new language.</string>
+    <!-- Confirmation messages -->
+    <string name="confirm_language_change_en" translatable="false">Confirm Language Change</string>
+    <string name="confirm_language_change_it" translatable="false">Conferma Cambiamento Lingua</string>
+    <string name="confirm_language_change_de" translatable="false">Sprache ändern bestätigen</string>
+    <string name="confirm_language_change_fr" translatable="false">Confirmer le changement de langue</string>
+    <string name="confirm_language_change_es" translatable="false">Confirmar cambio de idioma</string>
+    <string name="confirm_language_change_pt" translatable="false">Confirmar alteração de idioma</string>
+    <string name="confirm_language_change_zh" translatable="false">确认语言更改</string>
+    <string name="confirm_language_change_ar" translatable="false">تأكيد تغيير اللغة</string>
+    <string name="confirm_language_change_ru" translatable="false">Подтверждение изменения языка</string>
+
+    <!-- Language change messages -->
+    <string name="language_selected_english_will_be_applied_after_restart" translatable="false">The selected language is English, and the app will close to apply this change.</string>
+    <string name="lingua_selezionata_italiano_sar_applicata_al_riavvio" translatable="false">La lingua selezionata è Italiano e l\'app verrà chiusa per applicare questa modifica.</string>
+    <string name="sprache_ausgew_hlt_deutsch_wird_nach_neustart_angewendet" translatable="false">Die ausgewählte Sprache ist Deutsch, und die App wird geschlossen, um diese Änderung anzuwenden.</string>
+    <string name="lingua_selezionata_francese_sar_applicata_al_riavvio" translatable="false">La langue sélectionnée est le français et l\'application sera fermée pour appliquer ce changement.</string>
+    <string name="language_selected_spanish_will_be_applied_after_restart" translatable="false">El idioma seleccionado es español y la aplicación se cerrará para aplicar este cambio.</string>
+    <string name="language_selected_portuguese_will_be_applied_after_restart" translatable="false">A língua selecionada é português e o aplicativo será fechado para aplicar essa alteração.</string>
+    <string name="language_selected_chinese_will_be_applied_after_restart" translatable="false">选择的语言是中文，重启后将应用。</string>
+    <string name="language_selected_arabic_will_be_applied_after_restart" translatable="false">اللغة المحددة هي العربية وستطبق بعد إعادة التشغيل.</string>
+    <string name="language_selected_russian_will_be_applied_after_restart" translatable="false">Выбранный язык — русский, он будет применен после перезапуска.</string>
+
+    <!-- Confirmation and cancel buttons -->
+    <string name="confirm_en" translatable="false">Confirm</string>
+    <string name="confirm_it" translatable="false">Conferma</string>
+    <string name="confirm_de" translatable="false">Bestätigen</string>
+    <string name="confirm_fr" translatable="false">Confirmer</string>
+    <string name="confirm_es" translatable="false">Confirmar</string>
+    <string name="confirm_pt" translatable="false">Confirmar</string>
+    <string name="confirm_zh" translatable="false">确认</string>
+    <string name="confirm_ar" translatable="false">تأكيد</string>
+    <string name="confirm_ru" translatable="false">Подтвердить</string>
+
+    <string name="cancel_en" translatable="false">Cancel</string>
+    <string name="cancel_it" translatable="false">Annulla</string>
+    <string name="cancel_de" translatable="false">Abbrechen</string>
+    <string name="cancel_fr" translatable="false">Annuler</string>
+    <string name="cancel_es" translatable="false">Cancelar</string>
+    <string name="cancel_pt" translatable="false">Cancelar</string>
+    <string name="cancel_zh" translatable="false">取消</string>
+    <string name="cancel_ar" translatable="false">إلغاء</string>
+    <string name="cancel_ru" translatable="false">Отмена</string>
+
+    <string name="not_authenticated_error">You are not authenticated. Please sign in to save the event.</string>
+    <string name="updating_an_event">Updating an event is currently not possible. You can delete this event and recreate it with the correct information. We apologize for the inconvenience.</string>
+
+</resources>

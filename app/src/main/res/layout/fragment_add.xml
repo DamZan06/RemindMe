@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnSecondaryContainer"
+    tools:context=".ui.add.AddFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/titel"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/titleEditText"
+            app:layout_constraintBottom_toBottomOf="@id/titleEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Titel EditText -->
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/titel_hinzufugen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/personenEditText"
+            app:layout_constraintTop_toTopOf="@id/titleLabel" />
+
+        <!-- Description EditText -->
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/beschreibung_hinzufugen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/personenEditText"
+            app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+        <!-- Date TextView -->
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/datum"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/titleLabel"
+            app:layout_constraintTop_toBottomOf="@id/descriptionEditText" />
+
+        <!-- Date Button -->
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/datum_festlegen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/personenEditText"
+            app:layout_constraintTop_toBottomOf="@id/descriptionEditText" />
+
+        <!-- Time TextView -->
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/zeit"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/titleLabel"
+            app:layout_constraintTop_toBottomOf="@id/dateButton" />
+
+        <!-- Time Button -->
+        <Button
+            android:id="@+id/timeButtonVon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:onClick="popTimePickerVon"
+            android:text="@string/von"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/timeButtonBis"
+            app:layout_constraintStart_toStartOf="@+id/personenEditText"
+            app:layout_constraintTop_toBottomOf="@id/dateButton" />
+
+        <Button
+            android:id="@+id/timeButtonBis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="6dp"
+            android:onClick="popTimePickerBis"
+            android:text="@string/bis"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/timeButtonVon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateButton"
+            />
+
+        <!-- Ort TextView -->
+        <TextView
+            android:id="@+id/ortLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/ort"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/ortEditText"
+            app:layout_constraintStart_toStartOf="@+id/titleLabel"
+            app:layout_constraintTop_toBottomOf="@+id/timeButtonVon" />
+
+        <!-- Ort EditText -->
+        <EditText
+            android:id="@+id/ortEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/ort_hinzufugen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/personenEditText"
+            app:layout_constraintTop_toBottomOf="@+id/timeButtonVon" />
+
+        <!-- Personen TextView -->
+        <TextView
+            android:id="@+id/personenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/personen"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/personenEditText"
+            app:layout_constraintStart_toStartOf="@+id/titleLabel"
+            app:layout_constraintTop_toBottomOf="@+id/ortEditText" />
+
+        <!-- Personen EditText -->
+        <EditText
+            android:id="@+id/personenEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/personen_hinzufugen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ortEditText" />
+
+        <!-- Benachrichtigung TextView -->
+        <TextView
+            android:id="@+id/benachrichtigungLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/benachrichtigung"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switch1"
+            app:layout_constraintStart_toStartOf="@+id/titleLabel" />
+
+        <!-- Benachrichtigung Switch -->
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_5_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personenEditText"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_10_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_15_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch2"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_30_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch3"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_45_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch4"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/_60_min"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch5"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/switch6"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/deledButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/l_schen"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25" />
+
+            <Button
+                android:id="@+id/saveEventButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="@string/speichern"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

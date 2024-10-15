@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.DailyCalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="previousDayAction"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/monthDayText"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/feb_2021"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorOnSecondary" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/forward"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="nextDayAction"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dayOfWeekTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/monday"
+        android:layout_marginBottom="20dp"
+        android:textColor="?attr/colorSecondaryFixed"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/newEventButtonDaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neues_event"
+        android:onClick="newEventAction"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+
+    <ListView
+        android:id="@+id/hourListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="?attr/colorOnSecondary"
+        app:itemTextColor="?attr/colorOnSecondary"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
